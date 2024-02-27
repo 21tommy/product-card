@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aqua;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gen-classproduct{
+    display: flex;
+}
+
+.product-image{
+    border: 1px solid red;
+    background-image: url(/image-product-desktop.jpg);
+    width: 20rem;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 0.9rem;
+    border-bottom-left-radius: 0.9rem;
+}
+.head{
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.perf{
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:hsl(228, 12%, 48%) 
+}
+
+.class-content{
+    background-color:hsl(0, 0%, 100%) ;
+    width: 20rem;
+    padding: 25px;
+    border-top-right-radius: 0.9rem;
+    border-bottom-right-radius: 0.9rem;
+}
+
+
+.test{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    line-height: 1.5rem;
+    color:hsl(228, 12%, 48%)
+}
+
+.btn{
+     margin-top: 20px;
+}
+.add{
+    padding:8px;
+    width: 15rem;
+    border-radius: 0.5rem;
+    background:  hsl(158, 36%, 37%);
+    color:hsl(0, 0%, 100%) ;
+    border:  hsl(158, 36%, 37%);
+
+}
+.price{
+    display: flex;
+}
+.tag1{
+    font-size: 3rem;
+    color:  hsl(158, 36%, 37%);
+}
+.tag2{
+    padding-left:1rem;
+    padding-top: 1rem;
+    text-decoration: line-through;
+    color:hsl(228, 12%, 48%) 
+}
+
+@media screen and ( max-width:600px) {
+    .gen-classproduct{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin:3rem;
+    }
+    .product-image{ background-image: url(/image-product-desktop.jpg);
+        max-width: 40rem;
+        background-size: cover;
+        background-position: center;
+        min-height: 30rem;
+      border-bottom-left-radius: 0;
+    }
+
+    .class-content{
+        border-top-right-radius: 0;
+    }
+}
