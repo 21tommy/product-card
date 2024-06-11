@@ -89,7 +89,7 @@ body{
         grid-template-columns: 1fr;
         margin:3rem;
     }
-    .product-image{ background-image: url(/image-product-desktop.jpg);
+    .product-image{ background-image: url(image-product-desktop.jpg);
         max-width: 40rem;
         background-size: cover;
         background-position: center;
